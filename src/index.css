@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 leading-relaxed;
+  }
+  
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 active:scale-98 shadow-card hover:shadow-trip-card-hover;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 active:scale-98 shadow-card hover:shadow-trip-card-hover;
+  }
+  
+  .btn-accent {
+    @apply bg-accent hover:bg-yellow-500 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 active:scale-98 shadow-card hover:shadow-trip-card-hover;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-trip-card hover:shadow-trip-card-hover transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all duration-200;
+  }
+  
+  .travel-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-light;
+  }
+}
+
+@layer utilities {
+  .scale-98 {
+    transform: scale(0.98);
+  }
+  
+  .pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg opacity='0.03'%3E%3Cpath d='M50 5L60 25L80 25L65 40L70 60L50 50L30 60L35 40L20 25L40 25Z' fill='%232563EB'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Responsive Design Base */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply px-8;
+  }
+}

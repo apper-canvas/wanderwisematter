@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Visit Louvre Museum",
+    "startTime": "09:00",
+    "endTime": "13:00",
+    "location": "Rue de Rivoli, Paris",
+    "notes": "Pre-booked tickets, focus on Mona Lisa and Venus de Milo",
+    "category": "Culture"
+  },
+  {
+    "id": "2",
+    "title": "Seine River Cruise",
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "location": "Port de la Bourdonnais",
+    "notes": "Evening cruise with dinner, romantic setting",
+    "category": "Activity"
+  },
+  {
+    "id": "3",
+    "title": "Montmartre Walking Tour",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "location": "Sacré-Cœur Basilica",
+    "notes": "Artists' quarter, street performers, great city views",
+    "category": "Tour"
+  },
+  {
+    "id": "4",
+    "title": "Shopping at Champs-Élysées",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "location": "Avenue des Champs-Élysées",
+    "notes": "Visit Galeries Lafayette and local boutiques",
+    "category": "Shopping"
+  },
+  {
+    "id": "5",
+    "title": "Senso-ji Temple Visit",
+    "startTime": "09:00",
+    "endTime": "11:00",
+    "location": "Asakusa, Tokyo",
+    "notes": "Tokyo's oldest temple, traditional atmosphere",
+    "category": "Culture"
+  },
+  {
+    "id": "6",
+    "title": "Tsukiji Outer Market",
+    "startTime": "06:00",
+    "endTime": "09:00",
+    "location": "Tsukiji, Tokyo",
+    "notes": "Fresh sushi breakfast, tuna auction viewing",
+    "category": "Food"
+  },
+  {
+    "id": "7",
+    "title": "Shibuya Crossing Experience",
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "location": "Shibuya, Tokyo",
+    "notes": "World's busiest pedestrian crossing, Hachiko statue",
+    "category": "Sightseeing"
+  },
+  {
+    "id": "8",
+    "title": "Robot Restaurant Show",
+    "startTime": "20:00",
+    "endTime": "21:30",
+    "location": "Kabukicho, Shinjuku",
+    "notes": "Unique Tokyo entertainment experience",
+    "category": "Entertainment"
+  },
+  {
+    "id": "9",
+    "title": "Golden Gai Bar Hopping",
+    "startTime": "22:00",
+    "endTime": "01:00",
+    "location": "Golden Gai, Shinjuku",
+    "notes": "Tiny bars, local atmosphere, meet locals",
+    "category": "Nightlife"
+  },
+  {
+    "id": "10",
+    "title": "Meiji Shrine Visit",
+    "startTime": "08:00",
+    "endTime": "10:00",
+    "location": "Shibuya, Tokyo",
+    "notes": "Peaceful shrine in urban setting, morning ceremony",
+    "category": "Culture"
+  }
+]

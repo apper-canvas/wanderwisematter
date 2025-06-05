@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "tripId": "1",
+    "date": "2024-02-15",
+    "activities": [
+      {
+        "id": "1",
+        "title": "Arrival at Charles de Gaulle",
+        "startTime": "14:30",
+        "endTime": "16:00",
+        "location": "CDG Airport",
+        "notes": "Flight AF123 from JFK",
+        "category": "Transport"
+      },
+      {
+        "id": "2",
+        "title": "Hotel Check-in",
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "location": "Hotel Marais",
+        "notes": "Room 304, early check-in confirmed",
+        "category": "Accommodation"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "tripId": "1",
+    "date": "2024-02-16",
+    "activities": [
+      {
+        "id": "3",
+        "title": "Eiffel Tower Visit",
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "location": "Champ de Mars",
+        "notes": "Pre-booked tickets for elevator to top",
+        "category": "Sightseeing"
+      },
+      {
+        "id": "4",
+        "title": "Lunch at Café de Flore",
+        "startTime": "13:00",
+        "endTime": "14:30",
+        "location": "Saint-Germain-des-Prés",
+        "notes": "Famous historic café",
+        "category": "Dining"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "tripId": "2",
+    "date": "2024-03-10",
+    "activities": [
+      {
+        "id": "5",
+        "title": "Arrival at Narita",
+        "startTime": "16:45",
+        "endTime": "18:30",
+        "location": "NRT Airport",
+        "notes": "JL flight, collect JR Pass",
+        "category": "Transport"
+      }
+    ]
+  }
+]

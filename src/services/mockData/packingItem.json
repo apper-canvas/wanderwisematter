@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "tripId": "1",
+    "item": "Winter coat",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "2",
+    "tripId": "1",
+    "item": "Comfortable walking shoes",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "3",
+    "tripId": "1",
+    "item": "Toothbrush",
+    "category": "Toiletries",
+    "packed": true
+  },
+  {
+    "id": "4",
+    "tripId": "1",
+    "item": "Passport",
+    "category": "Documents",
+    "packed": true
+  },
+  {
+    "id": "5",
+    "tripId": "1",
+    "item": "Phone charger",
+    "category": "Electronics",
+    "packed": false
+  },
+  {
+    "id": "6",
+    "tripId": "1",
+    "item": "Travel guide book",
+    "category": "Other",
+    "packed": false
+  },
+  {
+    "id": "7",
+    "tripId": "2",
+    "item": "Light jackets",
+    "category": "Clothes",
+    "packed": false
+  },
+  {
+    "id": "8",
+    "tripId": "2",
+    "item": "Comfortable sneakers",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "9",
+    "tripId": "2",
+    "item": "Shampoo",
+    "category": "Toiletries",
+    "packed": false
+  },
+  {
+    "id": "10",
+    "tripId": "2",
+    "item": "Visa documents",
+    "category": "Documents",
+    "packed": true
+  },
+  {
+    "id": "11",
+    "tripId": "2",
+    "item": "Camera",
+    "category": "Electronics",
+    "packed": false
+  },
+  {
+    "id": "12",
+    "tripId": "2",
+    "item": "Portable WiFi device",
+    "category": "Electronics",
+    "packed": false
+  },
+  {
+    "id": "13",
+    "tripId": "3",
+    "item": "Swimwear",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "14",
+    "tripId": "3",
+    "item": "Sunscreen",
+    "category": "Toiletries",
+    "packed": false
+  },
+  {
+    "id": "15",
+    "tripId": "3",
+    "item": "Flip flops",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "16",
+    "tripId": "4",
+    "item": "Business casual clothes",
+    "category": "Clothes",
+    "packed": false
+  },
+  {
+    "id": "17",
+    "tripId": "4",
+    "item": "Theater-appropriate attire",
+    "category": "Clothes",
+    "packed": false
+  },
+  {
+    "id": "18",
+    "tripId": "5",
+    "item": "Light summer dresses",
+    "category": "Clothes",
+    "packed": false
+  },
+  {
+    "id": "19",
+    "tripId": "5",
+    "item": "Sandals",
+    "category": "Clothes",
+    "packed": true
+  },
+  {
+    "id": "20",
+    "tripId": "5",
+    "item": "GoPro camera",
+    "category": "Electronics",
+    "packed": false
+  }
+]
