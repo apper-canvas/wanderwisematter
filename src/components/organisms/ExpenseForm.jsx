@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Card, Button, Form, Row, Col, Alert } from 'react-bootstrap';
 
 const ExpenseForm = ({ onSubmit, initialData = null }) => {
   const [formData, setFormData] = useState({
@@ -84,124 +83,127 @@ const ExpenseForm = ({ onSubmit, initialData = null }) => {
   };
 
   return (
-    <Card>
-      <Card.Header>
-        <Card.Title>{initialData ? 'Edit Expense' : 'Add New Expense'}</Card.Title>
-      </Card.Header>
-      <Card.Body>
-        {errors.submit && (
-          <Alert variant="danger" className="mb-3">
-            {errors.submit}
-          </Alert>
-        )}
-        
-        <Form onSubmit={handleSubmit}>
-          <Row>
-            <Col md={6}>
-              <Form.Group className="mb-3">
-                <Form.Label>Title</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="title"
-                  value={formData.title}
-                  onChange={handleChange}
-                  isInvalid={!!errors.title}
-                  placeholder="Enter expense title"
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.title}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Col>
-            
-            <Col md={6}>
-              <Form.Group className="mb-3">
-                <Form.Label>Amount</Form.Label>
-                <Form.Control
-                  type="number"
-                  name="amount"
-                  value={formData.amount}
-                  onChange={handleChange}
-                  isInvalid={!!errors.amount}
-                  placeholder="0.00"
-                  step="0.01"
-                  min="0"
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.amount}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Col>
-          </Row>
-          
-          <Row>
-            <Col md={6}>
-              <Form.Group className="mb-3">
-                <Form.Label>Category</Form.Label>
-                <Form.Select
-                  name="category"
-                  value={formData.category}
-                  onChange={handleChange}
-                  isInvalid={!!errors.category}
-                >
-                  <option value="">Select category</option>
-                  <option value="food">Food & Dining</option>
-                  <option value="transportation">Transportation</option>
-                  <option value="shopping">Shopping</option>
-                  <option value="entertainment">Entertainment</option>
-                  <option value="bills">Bills & Utilities</option>
-                  <option value="healthcare">Healthcare</option>
-                  <option value="education">Education</option>
-                  <option value="travel">Travel</option>
-                  <option value="other">Other</option>
-                </Form.Select>
-                <Form.Control.Feedback type="invalid">
-                  {errors.category}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Col>
-            
-            <Col md={6}>
-              <Form.Group className="mb-3">
-                <Form.Label>Date</Form.Label>
-                <Form.Control
-                  type="date"
-                  name="date"
-                  value={formData.date}
-                  onChange={handleChange}
-                  isInvalid={!!errors.date}
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.date}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Col>
-          </Row>
-          
-          <Form.Group className="mb-3">
-            <Form.Label>Description (Optional)</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={3}
-              name="description"
-              value={formData.description}
+    <div className="card p-6">
+      <div className="mb-6">
+        <h3 className="text-xl font-semibold text-gray-900">
+          {initialData ? 'Edit Expense' : 'Add New Expense'}
+        </h3>
+      </div>
+      
+      {errors.submit && (
+        <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg mb-4">
+          {errors.submit}
+        </div>
+      )}
+      
+      <form onSubmit={handleSubmit}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Title
+            </label>
+            <input
+              type="text"
+              name="title"
+              value={formData.title}
               onChange={handleChange}
-              placeholder="Enter additional details about this expense"
+              className={`input-field ${errors.title ? 'border-red-500 focus:ring-red-500' : ''}`}
+              placeholder="Enter expense title"
             />
-          </Form.Group>
-          
-          <div className="d-flex justify-content-end">
-            <Button
-              type="submit"
-              variant="primary"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? 'Saving...' : (initialData ? 'Update Expense' : 'Add Expense')}
-</Button>
+            {errors.title && (
+              <p className="text-red-600 text-sm mt-1">{errors.title}</p>
+            )}
           </div>
-        </Form>
-      </Card.Body>
-    </Card>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Amount
+            </label>
+            <input
+              type="number"
+              name="amount"
+              value={formData.amount}
+              onChange={handleChange}
+              className={`input-field ${errors.amount ? 'border-red-500 focus:ring-red-500' : ''}`}
+              placeholder="0.00"
+              step="0.01"
+              min="0"
+            />
+            {errors.amount && (
+              <p className="text-red-600 text-sm mt-1">{errors.amount}</p>
+            )}
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Category
+            </label>
+            <select
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+              className={`input-field ${errors.category ? 'border-red-500 focus:ring-red-500' : ''}`}
+            >
+              <option value="">Select category</option>
+              <option value="food">Food & Dining</option>
+              <option value="transportation">Transportation</option>
+              <option value="shopping">Shopping</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="bills">Bills & Utilities</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="education">Education</option>
+              <option value="travel">Travel</option>
+              <option value="other">Other</option>
+            </select>
+            {errors.category && (
+              <p className="text-red-600 text-sm mt-1">{errors.category}</p>
+            )}
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Date
+            </label>
+            <input
+              type="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+              className={`input-field ${errors.date ? 'border-red-500 focus:ring-red-500' : ''}`}
+            />
+            {errors.date && (
+              <p className="text-red-600 text-sm mt-1">{errors.date}</p>
+            )}
+          </div>
+        </div>
+        
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Description (Optional)
+          </label>
+          <textarea
+            rows={3}
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            className="input-field"
+            placeholder="Enter additional details about this expense"
+          />
+        </div>
+        
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? 'Saving...' : (initialData ? 'Update Expense' : 'Add Expense')}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 
