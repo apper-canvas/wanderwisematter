@@ -15,11 +15,10 @@ export default function Text({ children, className = '', type = 'p', ...props })
     large: `text-lg ${commonClasses}`,
     subtle: `text-sm text-gray-500 dark:text-gray-400`,
     strong: `font-medium text-gray-900 dark:text-gray-200`,
-  }
+}
 
-  const Component = type in textStyles ? type : 'p'
+  const Component = type === 'large' ? 'span' : (type in textStyles ? type : 'p')
   const finalClass = `${textStyles[type] || textStyles.p} ${className}`
-
   return (
     <Component className={finalClass} {...props}>
       {children}
