@@ -197,12 +197,12 @@ const ExpenseForm = ({ onSubmit, initialData = null }) => {
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Saving...' : (initialData ? 'Update Expense' : 'Add Expense')}
-            </Button>
+</Button>
           </div>
         </Form>
-      </div>
+      </Card.Body>
     </Card>
-  )
-}
+  );
+};
 
-export default ExpenseForm
+export default ExpenseForm;
